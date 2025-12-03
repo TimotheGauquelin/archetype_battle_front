@@ -1,0 +1,11 @@
+echo "🔍 Formatting code..."
+npm run format
+
+echo "🔍 Linting checks..."
+npm run lint || exit 1
+
+echo "🧪 Running fast tests..."
+npm run test:fast || exit 1
+
+echo "✅ Pre-commit successful!"
+

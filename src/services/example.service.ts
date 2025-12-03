@@ -22,7 +22,10 @@ export const exampleService = {
     return response.data;
   },
 
-  updateData: async (id: number, data: Partial<ExampleData>): Promise<ExampleData> => {
+  updateData: async (
+    id: number,
+    data: Partial<ExampleData>
+  ): Promise<ExampleData> => {
     const response = await apiClient.put<ExampleData>(`/data/${id}`, data);
     return response.data;
   },
@@ -31,4 +34,3 @@ export const exampleService = {
     await apiClient.delete(`/data/${id}`);
   },
 };
-

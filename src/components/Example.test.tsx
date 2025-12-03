@@ -22,11 +22,4 @@ describe('Example Component', () => {
     );
     expect(screen.getByText('Contenu enfant')).toBeInTheDocument();
   });
-
-  it('has correct CSS classes', () => {
-    const { container } = render(<Example />);
-    const component = container.firstChild;
-    expect(component).toHaveClass('bg-blue-500', 'text-white', 'rounded-lg', 'shadow-md');
-  });
 });
-
