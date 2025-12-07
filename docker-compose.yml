@@ -1,0 +1,25 @@
+name: archetype-battle
+services:
+  react:
+    container_name: front-ab
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.dev
+    environment:
+      - NODE_ENV=development
+      - BACKEND_URL=http://localhost:8889
+    volumes:
+      - ./src:/app/src:rw
+      - ./public:/app/public:rw
+      - ./package.json:/app/package.json:ro
+      - ./tsconfig.json:/app/tsconfig.json:ro
+      - ./tailwind.config.js:/app/tailwind.config.js:ro
+      - ./postcss.config.js:/app/postcss.config.js:ro
+    ports:
+      - '8888:3000'
+    networks:
+      - network-project-ab
+
+networks:
+  network-project-ab:
+    external: true
