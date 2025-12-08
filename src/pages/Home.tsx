@@ -1,7 +1,13 @@
+import "../styles/Home.scss";
+import Header from "../components/generic/header/Header";
+import Slider from "../components/generic/header/Slider";
+
 const Home = () => {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-4 text-gray-800">Archetype Battle</h1>
+    <div className="flex flex-col">
+      <div id="headBlock" className="imgBackground">
+        <Header />
+      </div>
     </div>
   );
 };
