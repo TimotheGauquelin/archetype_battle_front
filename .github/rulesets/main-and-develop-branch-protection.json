@@ -1,0 +1,28 @@
+{
+    "name": "Protect Main and Develop Branches",
+    "target": "branch",
+    "enforcement": "active",
+    "conditions": {
+        "ref_name": {
+            "include": [
+                "refs/heads/main",
+                "refs/heads/develop"
+            ]
+        }
+    },
+    "rules": [
+        {
+            "type": "deletion",
+            "parameters": {
+                "block": true
+            }
+        },
+        {
+            "type": "force_pushes",
+            "parameters": {
+                "block": true
+            }
+        }
+    ],
+    "bypass_actors": []
+}
