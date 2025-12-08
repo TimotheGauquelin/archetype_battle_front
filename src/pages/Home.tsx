@@ -1,7 +1,19 @@
+import "../styles/Home.scss";
+import Header from "../components/generic/header/Header";
+import Footer from "../components/generic/footer/Footer";
+import PageContent from "../components/generic/PageContent";
+
 const Home = () => {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-4 text-gray-800">Archetype Battle</h1>
+    <div className="flex flex-col">
+      <div id="headBlock" className="imgBackground">
+        <Header />
+        <div className="h-[500px]"></div>
+      </div>
+      <PageContent>
+        <h1>Home</h1>
+      </PageContent>
+      <Footer />
     </div>
   );
 };

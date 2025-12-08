@@ -1,0 +1,36 @@
+.imgBackground {
+  background-image: url("../../public/assets/jumbotron_background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.whiteVeilText {
+  -webkit-text-stroke: 1px white;
+}
+
+.cardShadow {
+  box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12),
+    0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+}
+
+.subTitle {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.divider {
+  border: none;
+  border-top: 3px solid #e9e9e9;
+  color: #333;
+  border-radius: 100px;
+  height: 5px;
+  width: 50%;
+}
+
+.ellipsisText {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
