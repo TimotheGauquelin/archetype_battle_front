@@ -1,7 +1,7 @@
-import "../styles/Home.scss";
-import Header from "../components/generic/header/Header";
-import Footer from "../components/generic/footer/Footer";
-import PageContent from "../components/generic/PageContent";
+import '../styles/Home.scss';
+import Header from '../components/generic/header/Header';
+import Footer from '../components/generic/footer/Footer';
+import PageContent from '../components/generic/PageContent';
 
 const Home = () => {
   return (
